@@ -4,8 +4,8 @@ const loadData = () => {
         .then(data => {
             document.getElementById('table_body').innerHTML = data.map(item => {
                 return `<tr class='mt-2'>
-                            <td>${item.Name}</td>
-                            <td><a href=${item.Website} target="blank" class='text-secondary'>${item.Website}</a></td>
+                            <td class=''>${item.Name}</td>
+                            <td class=''><a href=${item.Website} target="blank" class='text-secondary'>${item.Website}</a></td>
                         </tr>`
             }).join('');
         });
