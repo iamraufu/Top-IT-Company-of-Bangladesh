@@ -1,5 +1,5 @@
 const loadData = () => {
-    fetch('../js/data.json')
+    fetch('js/data.json')
         .then(response => response.json())
         .then(data => {
             document.getElementById('table_body').innerHTML = data.map(item => {
